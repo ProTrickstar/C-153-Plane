@@ -65,7 +65,7 @@ AFRAME.registerComponent("plane-rotation-reader", {
           this.el.setAttribute("rotation", planeRotation);
         }
         if (planePosition.y < 2) {
-          planePosition.y += 0.01;
+          planePosition.y += 0.05;
           this.el.setAttribute("position", planePosition);
         }
       }
@@ -75,7 +75,7 @@ AFRAME.registerComponent("plane-rotation-reader", {
           this.el.setAttribute("rotation", planeRotation);
         }
         if (planePosition.y > -2) {
-          planePosition.y -= 0.01;
+          planePosition.y -= 0.05;
           this.el.setAttribute("position", planePosition);
         }
       }
